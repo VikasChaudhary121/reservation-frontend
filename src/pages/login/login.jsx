@@ -23,7 +23,7 @@ const Login = () => {
     try {
       console.log(credentials);
       const res = await axios.post(
-        "http://localhost:8000/api/auth/login",
+        "https://reservation-api-hag5.onrender.com/api/auth/login",
         credentials
       );
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });

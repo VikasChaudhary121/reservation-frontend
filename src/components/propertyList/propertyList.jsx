@@ -11,7 +11,7 @@ const PropertyList = () => {
   ];
 
   const { data, loading, error } = useFetch(
-    "http://localhost:8000/api/hotels/countByType"
+    "https://reservation-api-hag5.onrender.com/api/hotels/countByType"
   );
 
   return (

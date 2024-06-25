@@ -4,7 +4,7 @@ import useFetch from "../../hooks/useFetch";
 
 const FeaturedProperties = () => {
   const { data, loading, error } = useFetch(
-    "https://reservation-api.onrender.com/api/hotels?Featured=false"
+    "https://reservation-api-hag5.onrender.com/api/hotels?Featured=false"
   );
   return (
     <div className="featuredProperties">

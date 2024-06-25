@@ -52,7 +52,7 @@ const Reserve = ({ setOpen, hotelid }) => {
       await Promise.all(
         selectedRoom.map((roomId) => {
           return axios.put(
-            `https://reservation-api.onrender.com/api/rooms/availability/${roomId}`,
+            `https://reservation-api-hag5.onrender.com/api/rooms/availability/${roomId}`,
             { dates: allDates }
           );
         })

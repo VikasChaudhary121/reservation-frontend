@@ -3,7 +3,7 @@ import "./featured.css";
 
 const Featured = () => {
   const { data, loading, error } = useFetch(
-    "http://localhost:8000/api/hotels/countByCity?cities=Agra,lucknow,GorakhPur,delhi"
+    "https://reservation-api-hag5.onrender.com/api/hotels/countByCity?cities=Agra,lucknow,GorakhPur,delhi"
   );
 
   return (

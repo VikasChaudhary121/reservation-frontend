@@ -39,7 +39,7 @@ const Hotel = () => {
   const numDays = dayDifference(dates[0].endDate, dates[0].startDate);
 
   const { data, loading, error } = useFetch(
-    `http://localhost:8000/api/hotels/find/${id}`
+    `https://reservation-api-hag5.onrender.com/api/hotels/find/${id}`
   );
 
   const handleOpen = (i) => {

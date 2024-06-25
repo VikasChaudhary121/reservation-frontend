@@ -25,7 +25,7 @@ const List = () => {
   };
 
   const { data, loading, error, reFetchData } = useFetch(
-    `https://reservation-api.onrender.com/api/hotels?City=${destination}&min=${
+    `https://reservation-api-hag5.onrender.com/api/hotels?City=${destination}&min=${
       min || 0
     }&max=${max || 1000}`
   );
