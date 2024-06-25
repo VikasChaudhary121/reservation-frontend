@@ -1,0 +1,30 @@
+.propertyList{
+    width: 100%;
+    max-width: 1124px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.propertyListItem{
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    flex: 1;
+}
+.propertyListImg{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.propertyListTitles>h1{
+    font-size: 25px;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.propertyListTitles>h2{
+    font-size: 15px;
+    font: 300;
+    margin-left: 10px;
+    text-transform: capitalize;
+}

@@ -1,0 +1,132 @@
+.hotelContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin-top: 20px;
+}
+.hotelWrapper{
+    width: 100%;
+    max-width: 1124px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+.book{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    padding: 5px 7px;
+    background-color: rgb(47, 47, 206);
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hotelTitle{
+    font-size: 24px;
+}
+.hotelAdress{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hotelDistance{
+    color: rgb(20, 20, 163);
+    font-weight: 500;
+}
+.hotelPriceHighlight{
+    color: green;
+    font-weight: 500;
+}
+.hotelImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hotelImgWrapper{
+    width: 33%;
+}
+.hotelImg{
+    height: 240px;
+    width: 370px;
+    object-fit: cover;
+
+}
+.hotelDetails{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 20px;
+}
+.hotelDetailsText{
+    flex: 3;
+}
+.hotelDesc{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.hotelDetailsPrice{
+    flex: 1;
+    background-color: rgb(192, 231, 231);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: grey;
+}
+.headLine{
+    color: grey;
+}
+.bookBtn{
+    padding: 5px 7px;
+    background-color: rgb(47, 47, 206);
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.slider{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30, 32, 31, 0.347);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+}
+.sliderWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sliderImg{
+    width: 80%;
+    height: 80vh;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: lightcoral;
+    cursor: pointer;
+}
+.arrow{
+    margin: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.arrow:hover{
+    color: rgb(26, 110, 98);
+}

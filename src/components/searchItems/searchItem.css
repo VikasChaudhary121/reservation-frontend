@@ -1,0 +1,73 @@
+.searchItem{
+    display: flex;
+    gap: 1rem;
+    padding: 5px;
+    border: 2px solid grey;
+}
+
+.searchItemImg{
+    width: 200px;
+    height: 210px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.name{
+    color: rgb(27, 30, 128);
+}
+.taxi{
+    width: 120px;
+    color: aliceblue;
+    background-color: rgb(19, 135, 8);
+    padding: 2px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.cancelation{
+    color: green;
+}
+.notice{
+    color: rgb(17, 191, 17);
+}
+.ratingsandprice{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3px;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        font-weight: 600;
+    }
+    button{
+        background-color: rgb(12, 12, 97);
+        color: aliceblue;
+        padding: 2px;
+    }
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    h2{
+        text-align: right;
+    }
+    p{
+        text-align: right;
+    }
+}
+.availability{
+    color: aliceblue;
+    background-color: rgb(28, 74, 148);
+    padding: 6px;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+

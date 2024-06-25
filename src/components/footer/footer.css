@@ -1,0 +1,23 @@
+.FooterCont{
+    width: 100%;
+    max-width: 1124px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footerLists{
+    display: flex;
+    justify-content: space-around;
+}
+.footerList{
+    list-style: none;
+    font-weight: 600;
+    color: rgb(24, 24, 129);
+    margin: 5px;
+}
+.copyRight{
+    width: 100%;
+    max-width: 1124px;
+    margin-left: 2.7rem;
+}
