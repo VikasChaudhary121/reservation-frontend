@@ -56,6 +56,7 @@ const Header = ({ type }) => {
   };
 
   const { dispatch } = useContext(SearchContext);
+  const { dispatch: auth } = useContext(AuthContext);
 
   const handleSearchBtn = () => {
     dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } });
@@ -63,8 +64,15 @@ const Header = ({ type }) => {
   };
 
   const handleLogout = () => {
-    localStorage.clear();
+    auth({ type: "LOGOUT" });
+    navigate("/");
+    alert("Logged Out Successfully!!!");
   };
+  const handleLogin = (e) => {
+    e.preventDefault;
+    navigate("/login");
+  };
+  console.log(user);
 
   return (
     <div className="header">
@@ -105,7 +113,9 @@ const Header = ({ type }) => {
                 Logout
               </button>
             ) : (
-              <button className="headerButton">SignIn / Register</button>
+              <button className="headerButton" onClick={handleLogin}>
+                SignIn / Register
+              </button>
             )}
             <div className="headerSearch">
               <div className="headerSearchItem">

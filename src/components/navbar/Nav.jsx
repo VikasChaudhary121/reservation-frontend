@@ -4,8 +4,21 @@ import "./Nav.css";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
   const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault;
+    navigate("/login");
+  };
+  const handleSignup = (e) => {
+    e.preventDefault;
+    navigate("/signup");
+  };
+
   return (
     <div className="navbar">
       <div className="navContainer">
@@ -16,8 +29,12 @@ const Navbar = () => {
           user.userName
         ) : (
           <div className="navItems">
-            <button className="navButton">Register</button>
-            <button className="navButton">Login</button>
+            <button className="navButton" onClick={handleSignup}>
+              Register
+            </button>
+            <button className="navButton" onClick={handleLogin}>
+              Login
+            </button>
           </div>
         )}
       </div>
